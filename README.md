@@ -18,10 +18,6 @@ This is a project I started around "03/17/2024", where I was given a challenge t
 * [ReactJS](https://react.dev/).
 * [JavaScript](https://devdocs.io/javascript/).
 
-## ⚙️ Backend app:
-
-* https://github.com/CelsoCoutinho/MBINGULA_BACKEND_API
-
 ## ✒️ Developers/Contributors:
 
 * **Project Developer** - *Frontend (React.js) * - [Celso Coutinho](https://ao.linkedin.com/in/celso-coutinho-22075a230) / [Leandro Ucuamba](https://ao.linkedin.com/in/leandrosantosucuamba)
@@ -68,10 +64,6 @@ This is a project I started around "03/17/2024", where I was given a challenge t
 * Relationship between database entities
 * Authentication and authorization (Roles)
 * Validations
-
-## FrontEnd APP
-
-*https://github.com/CelsoCoutinho/MBINGULA_FRONTEND
 
 ## ✒️ Developers/Contributors:
 
