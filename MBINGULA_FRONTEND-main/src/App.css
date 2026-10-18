@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+@import url('./Front-office/components/Menu.css');
+@import url('./Front-office/components/Footer.css');
+@import url('./Front-office/components/LoginRegisterForm.css');
+@import url('./Front-office/pages/Home/Home.css');
+@import url('./Front-office/pages/Cardapio/Cardapio.css');
+@import url('./Front-office/pages/MostrarAtividadeHome/AtividadeHome.css');
+
+:root {
+  --bg-color: #FFFFFF;
+  --second-bg-color1: #F1F2F3;
+  --second-bg-color: #323A3C;
+  --text-color: #000000;
+  --second-color: #150F03;
+  --main-color: #F2C771;
+  --main-color2: #FF7B00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.orange-text {
+  color: rgb(25, 45, 227);
+}

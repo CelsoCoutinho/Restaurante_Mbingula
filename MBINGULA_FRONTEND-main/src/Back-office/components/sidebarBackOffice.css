@@ -1,0 +1,87 @@
+.sidebar {
+    color: #fff;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.menu-bar .ant-menu-item-selected {
+    background: var(--main-color);
+    color: #001529;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.logo-icon h1 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.toggle-theme-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.toggle {
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        color: #fff;
+        position: fixed;
+        z-index: 1000;
+        height: 100dvh;
+    }
+
+    .ocultar-sidebar {
+        transform: translateX(-100%);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100dvh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

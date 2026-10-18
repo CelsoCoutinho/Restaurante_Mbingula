@@ -1,0 +1,176 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String       @id @default(uuid())
+  name       String
+  email      String?      @unique
+  phone      String?      @unique
+  password   String
+  userAccess UserAccess[]
+  created_at DateTime     @default(now())
+  updated_at DateTime     @updatedAt
+}
+
+model UserAccess {
+  id         String   @id @default(uuid())
+  User       User?    @relation(fields: [userId], references: [id])
+  userId     String?
+  Access     Access?  @relation(fields: [accessId], references: [id])
+  accessId   String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Access {
+  id         String       @id @default(uuid())
+  name       String       @unique
+  userAccess UserAccess[]
+  created_at DateTime     @default(now())
+  updated_at DateTime     @updatedAt
+}
+
+model Sector {
+  id          String        @id @default(uuid())
+  name        String        @unique
+  descricao   String?
+  Funcionario Funcionario[]
+}
+
+model Funcionario {
+  id                String   @id @default(uuid())
+  name              String
+  morada            String
+  bilheteidentidade String   @unique
+  telefone          String   @unique
+  cargo             String
+  salario           String
+  Sector            Sector?  @relation(fields: [sectorId], references: [id])
+  sectorId          String?
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+}
+
+model ItemCardapio {
+  id         String   @id @default(uuid())
+  name       String   @unique
+  price      Decimal
+  categoria  String
+  Image      Image[]
+  disponivel String?  @default("Sim")
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Image {
+  id             String       @id @default(uuid())
+  path           String
+  ItemCardapio   ItemCardapio @relation(fields: [itemCardapioId], references: [id])
+  itemCardapioId String
+}
+
+model Avaliacao {
+  id         String   @id @default(uuid())
+  assunto    String
+  descricao  String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Servicorestaurante {
+  id        String @id @default(uuid())
+  tipo      String
+  descricao String
+}
+
+model Fornecedor {
+  id         String    @id @default(uuid())
+  nome       String
+  telefone   String    @unique
+  email      String    @unique
+  descricao  String
+  Produto    Produto[]
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+}
+
+model Produto {
+  id           String      @id @default(uuid())
+  nome         String
+  descricao    String
+  Estoque      Estoque[]
+  Fornecedor   Fornecedor? @relation(fields: [fornecedorId], references: [id])
+  fornecedorId String?
+  created_at   DateTime    @default(now())
+  updated_at   DateTime    @updatedAt
+}
+
+model Estoque {
+  id         String   @id @default(uuid())
+  quantidade Decimal
+  unidade    String
+  Produto    Produto? @relation(fields: [produtoId], references: [id])
+  produtoId  String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+// Trabalhando desde o dia 29/04/2024
+
+model Mesa {
+  id             String   @id @default(uuid())
+  numero         Int      @unique @default(autoincrement())
+  lugares        Int
+  posicao        String
+  statusOcupacao String?  @default("Disponível")
+  qtd_pessoa     String?
+  nome_cliente   String?
+  tel_cliente    String?
+  dataReserva    String?
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+}
+
+model Atividadecasa {
+  id        String @id @default(uuid())
+  tema      String
+  data      String
+  hora      String
+  descricao String
+}
+
+// Trabalhando desde o dia 09/08/2024
+
+model PedidoLocal {
+  id              String   @id @default(uuid())
+  tipoConsumo     String
+  valorTotal      Decimal
+  itemsPedido     String
+  metodoPagamento String
+  status          String
+  numeroMesa      Int
+  userName        String
+  userPhone       String
+  numeroPedido    Int      @unique @default(autoincrement())
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+}
+
+model PedidoCasa {
+  id              String   @id @default(uuid())
+  valorTotal      Decimal
+  itemsPedido     String
+  metodoPagamento String
+  status          String
+  userName        String
+  userPhone       String
+  numeroPedido    Int      @unique @default(autoincrement())
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+}

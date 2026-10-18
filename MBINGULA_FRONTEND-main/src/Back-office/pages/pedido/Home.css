@@ -1,0 +1,202 @@
+.d-flex {
+  display: flex;
+}
+
+.pedido-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+#titulos-back-office {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.div-filtro-delete {
+  /* border: 1px solid green; */
+  width: 90%;
+  margin-bottom: 1%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.div-filtro-delete input {
+  width: 20%;
+  font-size: 1rem;
+  padding: .4rem .5rem;
+  border-radius: .5rem;
+  transition: .3s;
+  outline: none;
+}
+
+.btn-delete {
+  font-size: 1rem;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+  /* height: 30px; */
+  padding: .3rem 1rem;
+  border-radius: 2rem;
+  transition: .3s;
+  outline: none;
+  transition: .5s;
+}
+
+.btn-delete:hover {
+  transform: scale(0.95);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  background-color: red;
+  color: white;
+  transition: .5s;
+}
+
+.content-pedido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: calc(100dvh - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* border: 1px solid blue; */
+  padding: 16px 10px;
+}
+
+.content-pedido::-webkit-scrollbar {
+  display: none;
+}
+
+.pedido-item {
+  position: relative;
+}
+
+.div-btn-status {
+  position: absolute;
+  top: 0;
+  right: 4%;
+}
+
+#btn-status {
+  font-size: 1.5rem;
+  color: green;
+  background-color: transparent;
+  border: none;
+}
+
+#btn-status:disabled {
+  color: gray;
+}
+
+.corpo-cards-pedido {
+  width: 250px;
+  height: 100%;
+  background: white;
+  border: 2px dashed #b4b4b4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-card-pedido {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.info-pedido {
+  text-align: left;
+  font-size: 0.85rem;
+  margin-bottom: 0px;
+  margin-bottom: 2%;
+  /* padding-left: 2%; */
+}
+
+.info-pedido-span {
+  font-weight: 700;
+  color: #001529;
+}
+
+#titulo-tabela {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.corpo-cards-pedido table {
+  width: 100%;
+  /* border-collapse: collapse; */
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+}
+
+.corpo-cards-pedido table th,
+.corpo-cards-pedido table td {
+  /* padding: 4px; */
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+td p {
+  margin: 0;
+  line-height: 1.2rem;
+  /* Ajuste conforme necessário */
+}
+
+.total-pedido {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.status-em-preparacao {
+  color: black;
+  background-color: yellow;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.status-outro {
+  color: black;
+  background-color: lightgreen;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .content-pedido {
+    padding: 30px 0px;
+    gap: 40px 20px;
+  }
+
+  .div-filtro-delete {
+    width: 95%;
+  }
+
+  .div-filtro-delete input {
+    width: 40%;
+    padding: .2rem .5rem;
+  }
+
+  .btn-delete {
+    padding: .2rem .5rem;
+  }
+
+  .corpo-cards-pedido {
+    width: 340px;
+  }
+
+  h1 {
+    margin-bottom: 8%;
+  }
+
+}

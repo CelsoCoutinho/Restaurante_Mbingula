@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+.container-footer {
+    width: 100%;
+    background-color: #0D0E10;
+}
+
+.onda {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    /* Remove qualquer borda */
+    outline: none;
+    /* Garante que não há contorno */
+}
+
+#footer_items {
+    display: flex;
+    padding: 0px 8% 0px 8%;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    display: inline-block;
+}
+
+.links a {
+    color: var(--main-color);
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.horario {
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.horario span {
+    color: var(--main-color);
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    display: inline-block;
+}
+
+.contactos a, .horario p,
+.detalhes p {
+    line-height: 25px;
+    color: var(--bg-color);
+}
+
+.contactos h4, .horario h4,
+.detalhes h4 {
+    color: var(--main-color);
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.social-media-buttons {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    color: white;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.copy {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1200px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contactos {
+        width: 100%;
+    }
+
+    .horario {
+        width: 100%;
+    }
+
+    .detalhes {
+        width: 100%;
+    }
+
+    .contactos a, .horario p {
+        line-height: 35px;
+    }
+
+    .contactos h4, .horario h4,
+    .detalhes h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .social-media-buttons {
+        margin-top: 20px;
+    }
+
+    .social-media-buttons a:hover {
+        color: var(--main-color);
+    }
+
+    .copy {
+        border-top: 1px solid black;
+    }
+}
+
+@media (max-width: 720px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contactos {
+        width: 100%;
+    }
+
+    .horario {
+        width: 100%;
+    }
+
+    .detalhes {
+        width: 100%;
+    }
+
+    .contactos a, .horario p {
+        line-height: 35px;
+    }
+
+    .contactos h4, .horario h4,
+    .detalhes h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .social-media-buttons {
+        margin-top: 20px;
+    }
+
+    .social-media-buttons a:hover {
+        color: var(--main-color);
+    }
+
+    .copy {
+        border-top: 1px solid black;
+    }
+}
+
+@media (max-width: 320px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0px;
+    }
+
+    .contactos {
+        width: 100%;
+    }
+
+    .horario {
+        width: 100%;
+    }
+
+    .detalhes {
+        width: 100%;
+    }
+
+    .contactos a, .horario p {
+        line-height: 35px;
+    }
+
+    .contactos h4, .horario h4,
+    .detalhes h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .social-media-buttons {
+        margin-top: 20px;
+    }
+
+    .social-media-buttons a:hover {
+        color: var(--main-color);
+    }
+}

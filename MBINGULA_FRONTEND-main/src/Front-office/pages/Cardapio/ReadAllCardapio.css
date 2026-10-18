@@ -1,0 +1,37 @@
+#cardapio-comida {
+    padding-bottom: 40px;
+}
+
+.cardapio-subtitle{
+    margin-top: 1em;
+}
+
+.btn-filtrar-pesquisa {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 0 0 4em;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-filtrar-pesquisa:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .btn-filtrar-pesquisa {
+        margin: 0 0 3em 0;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .cardapio-subtitle{
+        margin-top: 1em;
+    }
+}

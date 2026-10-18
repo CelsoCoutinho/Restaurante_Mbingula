@@ -1,0 +1,135 @@
+.itens-container-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#titulos-item {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.div-filtro-cadastrar {
+  width: 90%;
+  margin-bottom: 1%;
+  align-items: center;
+  justify-content: right;
+  display: flex;
+}
+
+.itens-content-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: calc(100dvh - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 10px;
+}
+
+.itens-content-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.item-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px dashed rgba(155, 117, 40, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 430px;
+  text-align: center;
+  padding: 15px;
+}
+
+.div-image-iten {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #9b7528;
+}
+
+.card p {
+  margin: 3px 0;
+  color: #555;
+}
+
+.div-buttons-itens {
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 4%;
+  left: 0;
+  padding: 0px 6%;
+  display: flex;
+  gap: 0% 10%;
+  justify-content: space-between;
+}
+
+.btn-iten {
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit {
+  font-size: 2rem;
+  color: rgba(0, 123, 255, 0.8);
+}
+
+.delete {
+  font-size: 2rem;
+  color: rgba(255, 0, 0, 0.8);
+}
+
+
+@media (max-width: 768px) {
+
+  #titulos-item {
+    font-size: 1.7rem;
+  }
+
+  .itens-content-inner {
+    padding: 16px 0px;
+  }
+
+  .item-image {
+    width: 88%;
+    height: 30vh;
+  }
+
+  .card {
+    width: 320px;
+    height: 500px;
+  }
+}

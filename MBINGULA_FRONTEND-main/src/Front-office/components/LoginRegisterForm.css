@@ -1,0 +1,242 @@
+#login-register {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    height: 100vh;
+}
+
+.div-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    /* padding: 0px; */
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgb(30, 14, 0), #0D0E10);
+    box-shadow: 20px 20px 60px #888888, -20px -20px 60px #ffffff;
+}
+
+
+#chk {
+    display: none;
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0% 10%;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+}
+
+.login h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 20% 0% 10% 0%;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.div-Nconta {
+    position: absolute;
+    bottom: 2%;
+}
+
+.N-conta {
+    float: left;
+    font-size: 14px;
+    margin-right: 5px;
+    color: rgba(245, 245, 245, 0.583);
+    font-weight: normal;
+}
+
+.abrir-logout {
+    float: left;
+    color: var(--main-color);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.abrir-logout:hover {
+    color: whitesmoke;
+    transition: .5s;
+}
+
+.input {
+    height: 35px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--main-color);
+    color: whitesmoke;
+    outline: none;
+    border-radius: 10px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.534);
+    font-weight: normal;
+}
+
+.form1 {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0% 10%;
+}
+
+.register {
+    width: 100%;
+    background-color: rgb(131, 131, 131);
+    transform: translateY(5%);
+    transition: .8s ease-in-out;
+    background: linear-gradient(0deg, rgb(30, 14, 0), #0D0E10);
+}
+
+.register h1 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--main-color);
+    font-size: 3rem;
+    margin: 0px 0px;
+    text-align: center;
+    transform: scale(.5);
+}
+
+.fechar-registrar {
+    width: 110%;
+    height: 6%;
+    margin-top: 2px;
+    padding: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.fechar-registrar i {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#chk:checked~.register {
+    transform: translateY(-70%);
+}
+
+#chk:checked~.register label {
+    transform: scale(1);
+    margin: 10% 0 5%;
+}
+
+.btn-form {
+    width: 90%;
+    height: 35px;
+    margin: 4px auto 0%;
+    color: var(--main-color);
+    background: var(--second-color);
+    font-size: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.btn-form:hover {
+    color: whitesmoke;
+    background: var(--second-color);
+    transition: .2s ease-in;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .div-main {
+        height: 70vh;
+        width: 500px;
+    }
+
+    .fechar-registrar {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .fechar-registrar i {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+    #login-register {
+        padding: 0;
+    }
+
+    .div-main {
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    .form {
+        height: 100vh;
+        padding: 10% 10px 0px 10px;
+    }
+
+    .form1 {
+        height: 100vh;
+        padding: 0% 10px 0px 10px;
+    }
+
+    .login {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login h1 {
+        font-size: 3rem;
+    }
+
+    .N-conta {
+        font-size: 1rem;
+    }
+
+    .abrir-logout {
+        font-size: 1rem;
+    }
+
+    .input {
+        margin-bottom: 15px;
+        height: 50px;
+    }
+
+    .register {
+        width: 100%;
+    }
+
+    .register h1 {
+        font-size: 4rem;
+    }
+
+    #chk:checked~.register {
+        transform: translateY(-100%);
+    }
+
+    .fechar-registrar {
+        width: 100%;
+    }
+
+    .btn-form {
+        height: 50px;
+    }
+}

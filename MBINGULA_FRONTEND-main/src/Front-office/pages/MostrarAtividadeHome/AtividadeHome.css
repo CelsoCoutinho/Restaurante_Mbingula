@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+.container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.row-about {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1a1a1a;
+}
+
+.detail-box-about {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.img-box-about {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+.img-box-about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.atividade-info {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+
+.atividade-info h3 {
+    font-size: 5rem;
+    color: #e8c34b;
+}
+
+.atividade-info p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.Title-description{
+    color: #e8c34b;
+}
+
+@media (max-width: 768px) {
+    .row-about {
+        flex-direction: column-reverse;
+    }
+
+    .img-box-about img {
+        width: 96%;
+        border-radius: 10px;
+    }
+
+    .atividade-info h3{
+        margin-top: -40px;
+        font-size: 3rem;
+    }
+}

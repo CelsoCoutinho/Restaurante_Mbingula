@@ -1,0 +1,160 @@
+#cardapio-comida {
+    padding: 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cardapio-title {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.cardapio-subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+#container-cardapio-comida {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 0px;
+}
+
+
+#servico-comida {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+    height: 100%;
+}
+
+.comida-subtitle {
+    font-size: 2.5rem;
+    padding-top: 0px;
+    margin: 5px 0px 20px 0px;
+}
+
+.card-cardapio-comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 10px;
+    width: 20%;
+    height: 100%;
+    padding-bottom: 20px;
+    box-shadow: 0px 5px 10px 0px rgb(94, 94, 94);
+    position: relative;
+    overflow: hidden;
+    background: #0D0E10;
+}
+
+.img-box-cardapio-comida {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    background: var(--second-bg-color1);
+    border-radius: 10px 10px 0px 30px;
+}
+
+.img-box-cardapio-comida img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 20px;
+}
+
+.dish-title-cardapio-comida {
+    color: var(--main-color);
+    font-family: 'Dancing Script', cursive;
+}
+
+.dish-description-cardapio-comida {
+    color: white;
+    text-align: center;
+}
+
+.dish-price-cardapio-comida {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.btn-default-cardapio-comida {
+    margin-left: 16px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--second-color);
+    background-color: #F2C771;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-default-cardapio-comida:hover {
+    color: var(--second-color);
+    background-color: white;
+    transition: 0.5s;
+    border: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #cardapio-comida {
+        text-align: center;
+    }
+
+    #servico-comida {
+        padding-top: 13%;
+        height: 100%;
+    }
+
+    .comida-subtitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #container-cardapio-comida {
+        width: 100%;
+        padding: 0px 2%;
+    }
+
+    .card-cardapio-comida {
+        gap: 19px;
+        width: calc(50% - 12px);
+        padding-bottom: 3%;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    #cardapio-comida {
+        text-align: center;
+    }
+
+    #container-cardapio-comida {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0px 3%;
+    }
+
+    .card-cardapio-comida {
+        gap: 19px;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+}

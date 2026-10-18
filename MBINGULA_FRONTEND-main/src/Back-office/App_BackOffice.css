@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+.sidebar ul li a:hover {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover a{
+  color: white;
+}
+
+.active{
+  /* background-color: rgb(236, 168, 32); */
+  border-radius: 5px;
+  color: white;
+}

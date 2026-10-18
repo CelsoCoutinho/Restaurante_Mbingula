@@ -1,0 +1,86 @@
+.cart-main-title{
+    color: #f0c038
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .row.center {
+    align-items: center;
+  }
+  .col-1 {
+    flex: 1;
+  }
+  .col-2 {
+    flex: 2;
+  }
+  .block {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .text-right {
+    text-align: right;
+  }
+  img.small {
+    max-height: 8rem;
+  }
+  button.enviarPedido {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #404040 solid;
+    background-color: #f0c040;
+    width: 30%;
+    cursor: pointer;
+  }
+  button.enviarPedido:hover {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #404040 solid;
+    background-color: #bfed92;
+    width: 30%;
+    cursor: pointer;
+  }
+  button.add {
+    background-color: #f0c040;
+    width: 1.5rem;
+  }
+  button.remove {
+    background-color: #f0c040;
+    width: 1.5rem;
+  }
+  button.badge {
+    background-color: #f04040;
+    border: none;
+    color: #ffffff;
+    width: 1.5rem;
+  }
+  #btn-add-product{
+    margin: 0.3rem 0 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }

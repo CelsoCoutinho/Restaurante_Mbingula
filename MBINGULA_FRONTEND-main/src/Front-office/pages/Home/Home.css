@@ -1,0 +1,261 @@
+.home {
+    position: relative;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home-content {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 5%;
+    color: white;
+    z-index: 2;
+}
+
+.home-content h1 {
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    padding: 10px;
+    color: var(--main-color);
+}
+
+.home-content p {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.peca-aqui {
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+}
+
+.peca-aqui::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg, #d1d1d1, #F2C771, #a7bfde);
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop 0.75s linear infinite;
+    animation-play-state: running;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+}
+
+.peca-aqui:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+.peca-aqui span {
+    position: relative;
+    display: block;
+    padding: .4rem;
+    font-size: 1.1rem;
+    background: var(--second-color);
+    border-radius: 100px;
+    height: 100%;
+    transition: .5s;
+}
+
+.peca-aqui span:hover {
+    color: var(--main-color);
+    transition: .5s;
+}
+
+.social-media-btn {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: left;
+    gap: 18px;
+}
+
+.social-media-btn a {
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    font-size: 1.6rem;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#whatsapp {
+    color: var(--main-color);
+    background: var(--second-color);
+    border: 1px solid var(--main-color);
+    transition: .5s ease;
+}
+
+#whatsapp:hover {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+#facebook {
+    color: var(--main-color);
+    background: var(--second-color);
+    border: 1px solid var(--main-color);
+    transition: .5s ease;
+}
+
+#facebook:hover {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+#instagram {
+    color: var(--main-color);
+    background: var(--second-color);
+    border: 1px solid var(--main-color);
+    transition: .5s ease;
+}
+
+#instagram:hover {
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .home {
+        position: relative;
+        height: 100%;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    .home-content {
+        position: absolute;
+        width: 50%;
+        left: 5%;
+        color: white;
+        z-index: 2;
+    }
+
+    .home-content h1 {
+        margin-bottom: 0px;
+        text-align: left;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        padding: 5px;
+        color: var(--main-color);
+        transition: 1s;
+    }
+
+    .home-content p {
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: left;
+        line-height: 23px;
+    }
+
+    .peca-aqui {
+        width: 40%;
+    }
+
+    .peca-aqui span {
+        padding: .4rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+    .home {
+        width: 100%;
+        height: 100dvh;
+    }
+
+    .home img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .home-content {
+        position: absolute;
+        width: 95%;
+        top: 25%;
+        left: 2%;
+        color: white;
+        z-index: 2;
+    }
+
+    .home-content h1 {
+        margin-bottom: 0px;
+        text-align: left;
+        font-family: 'Dancing Script', cursive;
+        font-size: 45px;
+        padding: 5px;
+        color: var(--main-color);
+        transition: 1s;
+    }
+
+    .home-content p {
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .peca-aqui {
+        width: 45%;
+    }
+
+    .peca-aqui span {
+        padding: .4rem 1.5rem;
+        font-size: 1.2rem;
+        background: #150F03;
+        color: #F2C771;
+    }
+
+    .social-media-btn {
+        justify-content: left;
+    }
+
+    .social-media-btn a {
+        margin-left: 5px;
+        color: var(--main-color);
+        transition: box-shadow .3s ease;
+    }
+
+    .social-media-btn a:checked {
+        color: var(--bg-color);
+    }
+
+}
